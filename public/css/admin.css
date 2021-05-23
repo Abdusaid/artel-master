@@ -1,0 +1,351 @@
+html, body{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+#my-app{
+    height: 100%;
+}
+
+
+#my-body{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.my-sidebar{
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.my-nav{
+    width: 100%;
+    height: 60px;
+    display: block;
+    text-align: center;
+}
+
+.my-nav p{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.my-nav p a{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.my-username a.dropdown-trigger{
+    font-size: 120%;
+    color: white;
+    margin-right: 10px;
+    padding: 10px;
+}
+.my-username a.dropdown-trigger i{
+    vertical-align: middle;
+}
+
+.my-username a.dropdown-trigger:hover{
+    color: #ffffffc0;
+}
+.my-username #dropdownUser a{
+    color: #4caf50;
+}
+
+.my-sidebar .my-nav p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    margin: 0;
+}
+
+#my-content{
+    padding: 0;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+}
+
+.my-loading-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-error-content{
+    height: 100%;
+    text-align: center;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my-ready-content{
+    height: 100%;
+    padding: 20px 10px;
+    overflow-y: scroll;
+}
+
+.my-remainder-content{
+    padding: 10px;
+}
+
+
+/* .my-menu{
+
+} */
+
+.my-menu-item{
+    padding: 5%;
+    text-align: center;
+    font-size: large;
+}
+.my-menu-item i{
+    vertical-align: middle;
+}
+
+.my-menu-item:hover{
+    background-color: #81C784;
+    cursor: pointer;
+}
+
+
+.tabs .tab a{
+    color: #4caf5080;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    color: #4caf50;
+}
+
+.tabs .indicator{
+    background-color: #4caf50;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: #4caf5020;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+.my-remainder-content .input-field input[type=text]:not(.browser-default):focus + label {
+    color: #2196f3;
+}
+
+.my-remainder-content .input-field input[type=text]:not(.browser-default):focus {
+    border-bottom: 1px solid #2196f3;
+    box-shadow: 0 1px 0 0 #2196f3;
+}
+
+.my-remainder-content .input-field .prefix.active{
+    color: #2196f3;
+}
+
+.my-table-name{
+    color: #2196f3;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #2196f3;
+}
+
+.my-table-name .input-field{
+    margin: 0px;
+}
+
+.my-table-div{
+    margin: 20px 0 40px 0;
+    border: 1px solid #2196f3;
+    box-shadow: 1px 1px 5px #2196f3;
+}
+.my-table-div th{
+    cursor: pointer;
+    position: relative;
+}
+
+.my-table-div th, .my-table-div td{
+    padding: 8px;
+}
+td, th{
+    border-radius: 0;
+}
+
+.my-add{
+    padding: 10px;
+    box-shadow: 1px 1px 5px #2196f3, -1px 1px 5px #2196f3;
+    text-align: center;
+}
+
+.my-add .card-content{
+    padding: 5px;
+}
+
+.my-add .card-reveal{
+    padding: 10px;
+}
+
+.my-add .card-reveal .export-raw-name{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.my-add .card-reveal .fifo-name{
+    color: #2196f3;
+    margin: 10px 20px 5px 20px;
+    font-size: medium;
+}
+
+.my-add .card-content p{
+    text-align: left;
+}
+
+.my-import-content td, .my-import-content th, .my-export-content td, .my-export-content th{
+    padding: 3px;
+}
+
+
+
+.export-fail, .export-success{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.export-fail p.title{
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal h4{
+    text-align: center;
+    margin: 0;
+}
+
+.modal .modal-footer{
+    text-align: center;
+}
+
+.modal .modal-footer button{
+    width: 100%;
+}
+
+.my-pagination{
+    text-align: center;
+}
+
+.my-pagination li.active{
+    background-color: #4caf50;
+}
+
+#my-export-history-table tr, #my-import-history-table tr{
+    cursor: pointer;
+}
+
+.my-fifo-badge{
+    border-radius: 2px;
+    margin-right: 5px;
+    color: white;
+    padding: 3px;
+    font-size: 90%;
+}
+
+.content-loading{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.my-order-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    bottom: 0;
+}
+
+
+.arrow-up{
+    height: 0;
+    width: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+    border-bottom: 8px solid lightgray;
+    margin-bottom: 1px;
+}
+.arrow-down{
+    height: 0;
+    width: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+    border-top: 8px solid lightgray;
+}
+
+.my-order-icons .arrow-up.order-active{
+    border-bottom-color: black;
+}
+.my-order-icons .arrow-down.order-active{
+    border-top-color: black;
+}
+.my-order-icons .order-inactive{
+    border-color: transparent;
+}
+
+.my-input-field{
+    margin-bottom: 1rem;
+}
+
+.card .card-content .my-checkbox{
+    margin-bottom: 1rem;
+}
+
+.my-fifos{
+    margin-bottom: 3px;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+/* .content-fail{
+} */
+
+.my-nav .left {
+    margin-left: 20px;
+    font-size: 200%;
+}
+
+.select-style{
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    height: 3rem;
+    font-size: 100%;
+    color: black;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+

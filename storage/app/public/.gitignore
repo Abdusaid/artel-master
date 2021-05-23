@@ -1,0 +1,12 @@
+*
+!.gitignore
+!allegro_exports_template.xlsx
+!magic_exports_template.xlsx
+!techno_exports_template.xlsx
+!techno_imports_template.xlsx
+!allegro_imports_template.xlsx
+!magic_imports_template.xlsx
+!magic_requests_template.xlsx
+!allegro_requests_template.xlsx
+!techno_requests_template.xlsx
+!notice_template.docx

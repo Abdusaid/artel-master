@@ -1,0 +1,4 @@
+.highlight tr:hover{
+    cursor: pointer;
+    filter: brightness(95%);
+}
